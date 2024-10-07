@@ -1,0 +1,25 @@
+.btn {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: .5rem;
+  color: var(--text-title);
+
+  padding: 12px 20px;
+}
+
+.btn-primary {
+  background-color: var(--pink-dark);
+
+  &:hover {
+    background-color: var(--pink-base);
+  }
+}
+
+.btn-secondary {
+  background-color: var(--blue-dark);
+
+  &:hover {
+    background-color: var(--blue-mid);
+  }
+}

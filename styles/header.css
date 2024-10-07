@@ -1,0 +1,17 @@
+header {
+  padding-block: 56px 154px;
+
+  & nav {
+    padding-inline: 160px;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+
+    
+    & a {
+      font: var(--buttom);
+    }
+  }
+}

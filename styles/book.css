@@ -1,0 +1,450 @@
+#book {
+  background: linear-gradient(0deg, rgba(0,5,10,1) 0%, rgba(9,6,18,1) 78%, rgba(25,6,25,1) 100%);
+  height: 1524px;
+
+  & .book-header {
+    flex-direction: column;
+    align-items: center;
+    gap: .313rem;
+    & h2 {
+      font: var(--title-sm);
+      color: var(--text-title);
+    }
+  
+    & p {
+      font: var(--body-md);
+      font-weight: var(--fw-base);
+    }
+  }
+
+  & .book-container {
+    padding-block: 222px;
+    width: 100%;
+    height: 920px;
+
+    & .book-content {
+      width: 815px;
+      height: 815px;
+      margin-inline: auto;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      & img:nth-child(1) {
+        width: 467px;
+        height: 617px;
+
+        z-index: 3;
+      }
+
+      & p:nth-child(2) {
+        position: absolute;
+        top: 2.5rem;
+        left: -2rem;
+
+        &:not(:hover) {
+          animation: booktextIn 420ms ease-out both;
+        }
+
+      }
+
+      & img:nth-child(3) {
+        width: 174px;
+        height: 30px;
+
+        position: absolute;
+        top: 5rem;
+        left: 2.5rem;
+
+      
+
+        &:not(:hover) {
+          animation: bookarrowIn 420ms ease-out both;
+        }
+      }
+
+      & img:nth-child(4) {
+        width: 172px;
+        height: 536px;
+
+        position: absolute;
+        transform: rotate(10deg);
+        top: 1rem;
+        right: 4rem;
+        z-index: 2;
+
+        &:not(:hover) {
+          animation: switchBack 420ms ease-out both;
+        }
+
+      }
+
+      & img:nth-child(5) {
+        width: 172px;
+        height: 536px;
+
+        position: absolute;
+        transform: rotate(18deg);
+        top: 7rem;
+        right: -2.5rem;
+        z-index: 1;
+
+        &:not(:hover) {
+          animation: switchpurpleBack 420ms ease-out both;
+        }
+      }
+
+      & p:nth-child(6) {
+        display: inline;
+
+        position: absolute;
+        bottom: 1.5rem;
+        right: 5rem;
+
+        z-index: 0;
+
+        &:not(:hover) {
+          animation: textBack 420ms ease-out both;
+        }
+      }
+
+      & img:nth-child(7) {
+        width: 145.54px;
+        height: 151.5px;
+
+        position: absolute;
+
+        bottom: 3rem;
+        right: .5rem;
+        z-index: 0;
+
+        &:not(:hover) {
+          animation: rightarrowBack 420ms ease-out both;
+        }
+      }
+
+      & img:nth-child(8) {
+        width: 222px;
+        height: 254px;
+
+        position: absolute;
+
+        transform: rotate(-8deg);
+        bottom: 2rem;
+        left: 2.5rem;
+
+        z-index: 0;
+
+        &:not(:hover) {
+          animation: brocheIn 420ms ease-out both;
+        }
+
+        
+      }
+
+      & p:nth-child(9) {
+        position: absolute;
+
+        left: -1rem;
+
+        &:not(:hover) {
+          animation: brochetextIn 420ms 40ms ease-out both;
+        }
+      }
+
+      & img:nth-child(10) {
+        width: 288.65px;
+        height: 127px;
+
+        position: absolute;
+
+        bottom: 15rem;
+        left: -6rem;
+
+        &:not(:hover) {
+          animation: brochearrowIn 420ms 40ms ease-out both;
+        }
+      }
+
+      
+      &:hover {
+        & p:nth-child(2) {
+          animation: booktextOut 1s ease-out both ;
+        }
+
+        & img:nth-child(3) {
+          animation: bookarrowOut 1s ease-out both ;
+        }
+
+        & img:nth-child(4) {
+          animation: switchUp 1s ease-out both ;
+        }
+
+        & img:nth-child(5) {
+          animation: switchupPurple 1s ease-out both ;
+        }
+
+        & p:nth-child(6) {
+          animation: textDown 1s ease-out both ;
+        }
+
+        & img:nth-child(7) {
+          animation: rightarrowDown 1s ease-out both ;
+        }
+
+        & img:nth-child(8) {
+          animation: brocheOut 1s ease-out both ;
+        }
+
+        & p:nth-child(9) {
+          animation: brochetextOut 1s ease-out both ;
+        }
+        
+        & img:nth-child(10) {
+          animation: brochearrowOut 1s ease-out both ;
+        }
+        
+
+      }
+
+      
+    }
+  }
+}
+
+/*Livro Texto*/
+@keyframes booktextOut {
+  0% {
+    transform: scale(1) translateX(17rem) translateY(7rem);
+  }
+
+  30% {
+    transform: scale(1.02) translateX(-.8rem) translateY(-.6rem);
+  }
+  
+  100% {
+    transform: scale(1) translateX(0) translateY(0);
+  }
+}
+
+@keyframes booktextIn {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    transform: translateX(16rem) translateY(7rem);
+  }
+}
+
+/*livro seta*/
+
+@keyframes bookarrowOut {
+  0% {
+    transform: scale(1) translateX(11rem) translateY(7rem);
+  }
+
+  30% {
+    transform: scale(1.02) translateX(-.8rem) translateY(-.6rem);
+  }
+  
+  100% {
+    transform: scale(1) translateX(0) translateY(0);
+  }
+}
+
+@keyframes bookarrowIn {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    transform: translateX(15rem) translateY(7rem);
+  }
+}
+
+/*Marcador Amarelo*/
+
+@keyframes switchUp {
+ 0% {
+  transform: rotate(0deg) translateX(-10rem) translateY(9rem);
+ }
+
+ 30% { 
+  transform: rotate(10deg) translateY(-.5rem);
+}
+
+ 100% {
+  transform: rotate(10deg) translateX(0);
+ }
+}
+
+@keyframes switchBack {
+  0% {
+    transform: rotate(10deg) translateX(0);
+  }
+ 
+  100% {
+   transform: rotate(0deg) translateX(-10rem) translateY(9rem);
+  }
+}
+
+/*Marcador Roxo*/
+
+@keyframes switchupPurple {
+  0% {
+   transform: rotate(0deg) translateX(-13rem) translateY(3rem);
+  }
+
+  30% {
+    transform: rotate(18deg) translateX(.5rem) translateY(-.2rem);
+   }
+ 
+  100% {
+   transform: rotate(18deg) translateX(0) translateY(0);
+  }
+ }
+
+ @keyframes switchpurpleBack {
+  0% {
+    transform: rotate(18deg) translateX(0) translateY(0);
+  }
+ 
+  100% {
+    transform: rotate(0deg) translateX(-13rem) translateY(3rem);
+  }
+ }
+
+ /*Seta Marcador*/
+
+ @keyframes rightarrowDown {
+   
+  0% {
+    transform: scale(1) translateX(-12rem) translateY(-7rem);
+  }
+
+  30% {
+    transform: scale(1.05) translateX(.8rem) translateY(.6rem);
+  }
+  
+  100% {
+    transform: scale(1) translateX(0) translateY(0);
+  }
+
+ }
+
+ @keyframes rightarrowBack {
+  0% {
+    transform:  translateX(0) translateY(0);
+  }
+
+  100% {
+    transform: translateX(-12rem) translateY(-7rem);
+   }
+ }
+
+ /*Texto Marcador*/
+
+ @keyframes textDown {
+  0% {
+    transform:translateX(-7rem) translateY(-7rem) ; 
+  }
+  30% {
+    transform:translateX(.8rem) translateY(.6rem);
+  }
+  
+  100% {
+    transform:translateX(0) translateY(0);
+  }
+ }
+
+ @keyframes textBack {
+  0% {
+    transform:translateX(0) translateY(0);
+  }
+
+  100% {
+    transform:translateX(-12rem) translateY(-7rem); 
+  }
+
+ }
+
+ 
+ /*Broxe*/
+
+ @keyframes brocheOut {
+  0% {
+    transform: rotate(-8deg) translateX(10rem) translateY(-4rem);
+   }
+ 
+  30% {
+    transform: rotate(-8deg) translateX(-.8rem) translateY(.5rem);
+  }
+  
+  100% {
+    transform: rotate(-8deg) translateX(0) translateY(0);
+   }
+ }
+
+ @keyframes brocheIn {
+  0% {
+    transform: rotate(-8deg) translateX(0) translateY(0);
+   }
+
+   100% {
+    transform: rotate(-8deg) translateX(11rem) translateY(-4rem);
+   }
+ }
+
+ /*Broxe Arrow*/
+
+ @keyframes brochearrowOut {
+  0% {
+    transform: scale(1) translateX(10rem) translateY(-4rem);
+   }
+ 
+   30% {
+     transform: scale(1.05) translateX(-.8rem) translateY(.5rem);
+    }
+  
+   100% {
+    transform: scale(1) translateX(0) translateY(0);
+   }
+ }
+
+ @keyframes brochearrowIn {
+  0% {
+    transform: translateX(0) translateY(0);
+   }
+  
+   100% {
+    transform: translateX(14rem) translateY(-5rem);
+   }
+ }
+
+ /*Broche Text*/
+
+ @keyframes brochetextOut {
+  0% {
+    transform: translateX(10rem) translateY(-3rem);
+   }
+ 
+   30% {
+     transform: translateX(-.8rem) translateY(.5rem);
+    }
+  
+   100% {
+    transform: translateX(0) translateY(0);
+   }
+ }
+
+ @keyframes brochetextIn {
+  0% {
+    transform: translateX(0) translateY(0);
+   }
+ 
+   100% {
+    transform: translateX(15rem) translateY(-3rem);
+   }
+ }
+ 

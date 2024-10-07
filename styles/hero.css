@@ -1,0 +1,66 @@
+.hero-container {
+  height: 850px;
+ 
+  background: rgb(0,5,10);
+  background: linear-gradient(180deg, rgba(0,5,10,1) -4%, rgba(9,6,18,1) 78%, rgba(25,6,25,1) 100%);
+}
+
+#hero {
+
+  & figure {
+    align-items: center;
+    opacity: 0;
+    position: a;
+
+    
+    animation: appear ease-in 1.5s forwards;
+    
+
+    & img {
+      position: absolute;
+      width: 100%;
+      height: 850px; 
+      
+      top: 0;
+      left: 0;
+
+    }
+
+    & figcaption {
+      display: flex;
+      gap: 2rem;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin-inline: auto;
+       
+      
+
+      animation: appear linear 2s forwards;
+
+      & h1 {
+        font: var(--title-lg);
+        color: var(--text-title);
+      }
+
+      & p {
+        font: var(--body-lg);
+        font-weight: var(--fw-base);
+        opacity: 0;
+
+        animation: appear linear 1.5s forwards;
+        animation-delay: 1s;
+      }
+
+    }
+  }
+
+
+}
+
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }  
+}

@@ -1,0 +1,145 @@
+#text-animation {
+  background: rgb(0,5,10);
+  background: linear-gradient(0deg, rgba(0,5,10,1) 0%, rgba(9,6,18,1) 78%, rgba(25,6,25,1) 100%);
+
+  & .animation-container {
+    position: relative;
+    padding: 96px 120px 80px;
+    flex-direction: column; 
+    margin-inline: auto;
+    align-items: center;
+
+    & .text-book {
+      font: var(--subtitle);
+      line-height: 200%;
+      font-weight: var(--fw-base);
+      color: rgba(226, 231, 233, 0.5);
+      text-align: center;
+
+      & span {
+        font-weight: var(--fw-bold);
+        color: inherit;
+      }
+    }
+
+    .p1, .p2, .p3 {
+      margin: 0;
+      display: inline;
+    }
+
+
+    & .book-one,
+    & .book-two,
+    & .book-three {
+      opacity: 0; 
+    }
+
+    & .book-two {
+      position: absolute;
+      left: 9rem;
+      bottom: 0;
+    }
+
+    & .book-three {
+      position: absolute;
+      right: 6rem;
+      bottom: 0;
+    }
+
+    & .book-one:not(:hover) {
+      animation: bookScaleoff 350ms  ease-in-out both;
+    }
+
+    & .book-two:not(:hover) {
+      animation: bookDisappear 350ms ease-in-out both;
+    }
+
+    & .book-three:not(:hover) {
+      animation: bookDisappear 350ms ease-in-out both;
+    }
+
+    &:hover{
+      & .p1 {
+        animation: changeP 2.3s step-start forwards; 
+      }
+
+      & .span1 {
+        animation: changeSpan 2.3s step-start both;
+      }
+
+      & .p2 {
+        animation: changeP 2.3s 500ms step-start both; 
+      }
+
+      & .span2 {
+        animation: changeSpan 2.3s 500ms step-start both;
+      }
+
+      & .p3 {
+        animation: changeP 2.3s 1s step-start both; 
+      }
+
+      & .span3 {
+        animation: changeSpan 2.3s 1s step-start both;
+      }
+
+      & .book-one {
+        animation: bookAppear 250ms  ease-in-out both;
+      }
+
+      & .book-two {
+        animation: bookAppear 250ms 500ms ease-in-out both;
+      }
+
+      & .book-three {
+        animation: bookAppear 250ms 1s ease-in-out both;
+      }
+    }
+
+  }
+}
+
+@keyframes changeP {
+  to {
+    color: var(--text-body);
+  }
+}
+
+@keyframes changeSpan {
+  to {
+    color: var(--blue-light);
+  }
+}
+
+
+@keyframes bookAppear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bookScaleoff {
+  0% {
+    transform: scale(1); 
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes bookDisappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
