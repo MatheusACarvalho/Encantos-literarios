@@ -71,6 +71,7 @@ html {
 body {
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: #001933;
 }
 
 
@@ -80,5 +81,9 @@ a {
 }
 
 button {
+  all: unset;
+}
+
+li {
   all: unset;
 }

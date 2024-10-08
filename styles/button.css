@@ -1,11 +1,11 @@
 .btn {
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 2.5rem;
   border-radius: .5rem;
   color: var(--text-title);
 
-  padding: 12px 20px;
+  padding: 0.75rem 1.25rem;
 }
 
 .btn-primary {

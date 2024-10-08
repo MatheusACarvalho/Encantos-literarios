@@ -1,5 +1,5 @@
 .hero-container {
-  height: 850px;
+  height: 53.125rem;
  
   background: rgb(0,5,10);
   background: linear-gradient(180deg, rgba(0,5,10,1) -4%, rgba(9,6,18,1) 78%, rgba(25,6,25,1) 100%);
@@ -19,7 +19,7 @@
     & img {
       position: absolute;
       width: 100%;
-      height: 850px; 
+      height: 53.125rem; 
       
       top: 0;
       left: 0;

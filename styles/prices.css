@@ -4,13 +4,13 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-block-start: 194px;
+    padding-block-start: 12.125rem;
 
     & .price-header {
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding-block-end: 88px;
+        padding-block-end: 5.5rem;
     }
 
     & .price-container {
@@ -18,7 +18,7 @@
         margin-inline: auto;
         justify-content: center;
         align-items: center;
-        height: 606px;
+        height: 37.875rem;
 
         &:not(:hover) {
             & .card-1 {
@@ -46,16 +46,16 @@
         & .price-card {
             display: flex;
             flex-direction: column;
-            padding: 24px 24px 28px;
-            border-radius: 24px;
+            padding: 1.5rem 1.5rem 1.75rem;
+            border-radius: 1.5rem;
 
-            width: 288px;
-            height: 416px;
+            width: 18rem;
+            height: 26rem;
             
 
             & div:nth-child(2) {
                 justify-content: space-between;
-                padding-block-end: 24px;
+                padding-block-end: 1.5rem;
 
                 & h3 {
                     font: var(--title-xs);
@@ -67,10 +67,10 @@
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
-                    width: 90px;
-                    height: 30px;
+                    width: 5.625rem;
+                    height: 1.875rem;
                     background: #002347;                   
-                    border-radius: 999px;
+                    border-radius: 62.438rem;
                     font: var(--tag);
                     letter-spacing: 5%;
                     transform: translateY(-15%);
@@ -80,7 +80,7 @@
 
             & div:nth-child(3) {
                 align-items: baseline;
-                padding-block-end: 8px;
+                padding-block-end: .5rem;
 
                 & h2 {
                     font: var(--title-md);
@@ -93,7 +93,7 @@
 
             & p:nth-child(4) {
                 align-items: center;
-                padding-block-end:70px;
+                padding-block-end: 4.375rem;
 
                 font: var(--body-sm);
                 color: var(--text-label);
@@ -102,8 +102,8 @@
 
             & ul:nth-child(5) {
                 flex-direction: column;
-                gap: 12px;
-                margin-block-end: 24px;
+                gap: .75rem;
+                margin-block-end: 1.5rem;
                 list-style: none;
                 padding: 0;
 
@@ -119,9 +119,9 @@
                     &::before {
                         content: "";
                         background-image: url(../assets/icons/star-purple.svg);
-                        background-size: 14px 14px;
-                        width: 14px; 
-                        height: 14px; 
+                        background-size: .875rem .875rem;
+                        width: .875rem; 
+                        height: .875rem; 
                         position: absolute; 
                         left: 0;
                         top: 50%; 
@@ -139,10 +139,10 @@
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                width: 224px;
-                height: 40px;
+                width: 14rem;
+                height: 2.5rem;
                 background: #7D298A;
-                border-radius: 8px;
+                border-radius: .5rem;
 
             }
 
@@ -156,8 +156,8 @@
 
             & img:nth-child(1) {
                 position: absolute;
-                height: 26px;
-                width: 26px;
+                height: 1.625rem;
+                width: 1.625rem;
 
                 top: -1.5rem;
                 left: -1.5rem;
@@ -165,8 +165,8 @@
 
             & img:nth-child(2) {
                 position: absolute;
-                height: 13px;
-                width: 13px;
+                height: .813rem;
+                width: .813rem;
 
                 top: .5rem;
                 left: -2rem;
@@ -214,11 +214,11 @@
             background-color: var(--shape-base);
             z-index: 1;
             transform: translateY(-4rem);
-            padding-block-end: 16px;
+            padding-block-end: 1rem;
 
             & > img {
-                width: 45px;
-                height: 50px;
+                width: 2.813rem;
+                height: 3.125rem;
                 position: absolute;
 
                 top: -3rem;
@@ -239,8 +239,8 @@
 
             & img:nth-child(1) {
                 position: absolute;
-                height: 26px;
-                width: 26px;
+                height: 1.625rem;
+                width: 1.625rem;
 
                 bottom: -.5rem;
                 right: -2.5rem;
@@ -248,8 +248,8 @@
 
             & img:nth-child(2) {
                 position: absolute;
-                height: 13px;
-                width: 13px;
+                height: .813rem;
+                width: .813rem;
 
                 bottom: -1.5rem;
                 right: 0;
@@ -263,7 +263,7 @@
 
             & p:nth-child(4) {
                 align-items: center;
-                padding-block-end: 45px;
+                padding-block-end: 2.813rem;
 
                 font: var(--body-sm);
                 color: var(--text-label);
