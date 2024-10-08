@@ -19,10 +19,10 @@
   --blue-dark: #144A72;
   --blue-low: #08233C;
 
-  --shape-stroke: #002347;
-  --shape-hover: #001933;
-  --shape-base: #000F1F;
-  --shape-background: #00050A;
+  --shape-stroke: #003c80;
+  --shape-hover: #003066;
+  --shape-base: #00244d;
+  --shape-background: #000f20;
 
   --text-title: #F8FBFB;
   --text-body: #E2E7E9;
@@ -50,19 +50,21 @@
   --title-sm: var(--fw-bold) var(--fs-xl) var(--ff-base);
   --title-xs: var(--fw-bold) var(--fs-base) var(--ff-base);
 
-  --buttom: var(--fw-bold) var(--fs-md) var(--ff-base);
+  --button: var(--fw-bold) var(--fs-xs) var(--ff-base);
+
+  --tag: var(--fw-bold) var(--fs-xxs) var(--ff-base);
 
   --subtitle: var(--fw-bold) var(--fs-xl) var(--ff-base); 
 
   --body-lg: var(--fw-semibold) var(--fs-lg)/1.4 var(--ff-base);
   --body-md: var(--fw-semibold) var(--fs-base)/1.4 var(--ff-base);
   --body-sm: var(--fw-semibold) var(--fs-md)/1.4 var(--ff-base);
-  --body-xs: var(--fw-semibold) var(--fs-sm)/1.4 var(--ff-base);
+  --body-xs: var(--fw-base) var(--fs-xs)/1.4 var(--ff-base);
 
 }
 
 html {
-  font: var(--fw-semibold) var(--fs-base)/auto var(--ff-base);
+  font: var(--fw-semibold) var(--fs-base) var(--ff-base);
   color: var(--text-body);
 }
 
@@ -77,11 +79,6 @@ a {
   text-decoration: none;
 }
 
-.color-transition {
-  background: rgb(0,5,10);
-  background: linear-gradient(180deg, rgba(0,5,10,1) -4%, rgba(9,6,18,1) 78%, rgba(25,6,25,1) 100%);
-  height: 235px;
+button {
+  all: unset;
 }
-
-
-
